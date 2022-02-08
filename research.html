@@ -10,6 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/e1e805e201.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 </head>
 <body>
@@ -18,6 +19,9 @@
   <div class="container">
     <div class = "contact">
       <p>
+        <a class="icon" target="_blank" rel="noopener" href="https://scholar.google.ca/citations?user=lVuHnRkAAAAJ&hl=en&oi=ao">
+          <i class="ai ai-google-scholar"></i>
+        </a>
         <a class="icon" target="_blank" rel="noopener" href="https://github.com/rebeccagarner">
           <i class="fab fa-github"></i>
         </a>
@@ -47,28 +51,29 @@
 <div class="container researchinfo">
   <div class="row">
     <div class="col-sm-12">
-      <h2>1. Microbial eukaryotic diversity in Canadian lakes</h2>
-      <p>Tracing the biogeography of microeukaryotes in the surface waters of lakes across Canada using molecular genetic techniques.</p>
+      <p>My research uses culture-independent molecular genetic techniques to track the diversity of microorganisms in lakes across large spatial and temporal scales.<br>
+    </div>
+    <div class="col-sm-12">
+      <h2>Contemporary microbial eukaryotic diversity in Canadian lakes</h2>
+      <h3>1. Protist diversity and metabolic strategy in lakes at a continental scale</h3>
+      <p>We traced the distributions and environmental drivers of protists and their metabolic strategies in 366 freshwater lakes using 18S rRNA gene amplicon sequencing. <i>Manuscript currently under review.</i></p>
+      <h3>2. Fungal diversity in freshwater lakes</h3>
+      <p>Following our discovery of a rich diversity of fungi in our 18S rRNA gene data set, we are focusing a separate analysis on this group to bring clarity to their distributions in freshwater lakes.</p>
       <hr>
     </div>
     <div class="col-sm-12">
-      <h2>2. Clarifying the effects of eutrophication on microeukaryotic communities: Insights from the Experimental Lakes Area</h2>
-      <p>Combining water column filtrate and sediment core time series.</p>
+      <h2>Reconstructing the microbial past by studying DNA preserved in lake sediments</h2>
+      <h3>3. Metagenomics perspective on microbial diversity preserved in lake sediment DNA archives</h3>
+      <p>Paleogenetics is a field of research under intense development, especially as applied to lake sediments. We pioneered a novel application of shotgun-metagenomics to detect preindustrial microbial diversity in lake sediments. Our article describing this method and our discovery of bacterioplankton and viruses preserved in sediment metagenomes is titled <i>Sediment Metagenomes as Time Capsules of Lake Microbiomes</i> and is available <a target="_blank" href="https://doi.org/10.1128/mSphere.00512-20">here</a>.</p>
+      <h3>4. Long-term effects of eutrophication on lake microeukaryotic communities: Insights from the Experimental Lakes Area</h3>
+      <p>The IISD Experimental Lakes Area is an iconic whole-lake experimentation facility in western Ontario. We are analyzing sediment cores from experimentally nutrient-enriched lakes and unmanipulated reference lakes to track the effects of whole-lake eutrophication on microeukaryotic diversity over the 50-year history of the ELA.</p>
+      <h3>5. Comparative paleogenetics of preindustrial and contemporary microeukaryotic assemblages from Canadian lake sediments</h3>
+      <p>We are comparing modern and preindustrial sediments to assess ~150 years of human impact on microeukaryotic communities in eastern Canadian lakes.</p>
       <hr>
     </div>
     <div class="col-sm-12">
-      <h2>3. Comparative paleogenetics of preindustrial and contemporary microeukaryotic assemblages from Canadian lake sediments</h2>
-      <p>Assessing the impact of human activities on microeukaryotic communities after ~150 years of impact.</p>
-      <hr>
-    </div>
-    <div class="col-sm-12">
-      <h2>4. Revealing the undiscovered microbial diversity preserved in lake sediment DNA archives</h2>
-      <p>With whole-metagenome shotgun sequencing.</p>
-      <hr>
-    </div>
-    <div class="col-sm-12">
-      <h2>Fieldwork map</h2>
-      <p>I've had the lucky experience of sampling over 90 lakes with the Canadian Lake Pulse Network in Nova Scotia and Newfoundland and Labrador in 2018, then in interior British Columbia in 2019.</p>
+      <h2>Fieldwork</h2>
+      <p>As a graduate student in the NSERC Canadian Lake Pulse Network, I had the fantastic experience of performing a full day of sampling for over 90 lakes in Nova Scotia and Newfoundland and Labrador in 2018, then in interior British Columbia in 2019. More information on LakePulse and its sampling campaign targeting 664 lakes across Canada can be found at this <a target="_blank" href="https://lakepulse.ca/">link</a>.</p>
       <div id="map" style="width: 900px; height: 500px;"></div>
 <script>
 var locations = [
@@ -88,7 +93,7 @@ var locations = [
   ["Three Island Pond", 47.510293, -52.901442],
   ["Gull Pond", 47.46447, -52.976425],
   ["Burnt Berry Pond", 49.451178, -56.188657],
-  ["NA", 47.850967, -55.765996],
+  ["A lake with no name", 47.850967, -55.765996],
   ["Great Pond", 47.664336, -52.76537],
   ["Big Lake", 45.710947, -63.710239],
   ["Kennedy Lake", 45.716514, -63.228122],
@@ -100,7 +105,7 @@ var locations = [
   ["Moore Lake", 44.961142, -63.757733],
   ["West Pogue Lake", 45.228384, -62.762945],
   ["Johnson Lake", 46.171199, -60.318258],
-  ["NA", 46.170166, -60.014699],
+  ["A lake with no name", 46.170166, -60.014699],
   ["Lake Ainslie", 46.132703, -61.185324],
   ["Embrees Pond", 45.622179, -61.362123],
   ["Shepherd Lake", 45.522507, -61.560681],
@@ -129,40 +134,40 @@ var locations = [
   ["Green Lake", 50.151407, -122.931788],
   ["Alta Lake", 50.114032, -122.981403],
   ["Lillooet Lake", 50.215541, -122.490763],
-  ["NA", 55.024461, -127.346246],
+  ["A lake with no name", 55.024461, -127.346246],
   ["Kitseguecla Lake", 54.934739, -127.55412],
   ["Lakelse Lake", 54.381312, -128.559744],
   ["Diana Lake", 54.209495, -130.147927],
-  ["NA", 54.008382, -123.135854],
+  ["A lake with no name", 54.008382, -123.135854],
   ["Nukko Lake", 54.064509, -123.007832],
   ["Chief Lake", 54.120806, -123.004988],
   ["Eena Lake", 54.049179, -123.018163],
   ["Ferguson Lake", 54.037199, -122.84621],
   ["Hanson Lake", 54.242465, -125.061656],
   ["Williams Lake", 52.118825, -122.075003],
-  ["NA", 52.000623, -122.173033],
+  ["A lake with no name", 52.000623, -122.173033],
   ["Chaunigan Lake", 51.571867, -123.893069],
   ["Konni Lake", 51.473574, -123.887461],
-  ["NA", 52.15161, -124.512345],
+  ["A lake with no name", 52.15161, -124.512345],
   ["Nimpo Lake", 52.340193, -125.204735],
   ["Blue Lake", 52.341465, -122.236095],
   ["Nulki Lake", 53.90613, -124.137247],
   ["Clearwater Lake", 52.011725, -125.008155],
-  ["NA", 53.977642, -125.898396],
+  ["A lake with no name", 53.977642, -125.898396],
   ["Dunalter Lake", 54.470753, -126.755752],
   ["Round Lake", 54.656922, -126.924746],
   ["Mulvaney Lake", 54.077005, -125.757675],
-  ["NA", 53.42795, -124.545783],
+  ["A lake with no name", 53.42795, -124.545783],
   ["Hobson Lake", 53.580617, -124.73149],
   ["Fish Lake", 53.598731, -124.889241],
   ["Cummings Lake", 52.086749, -121.952157],
   ["Co-op Lake", 54.186152, -125.428674],
   ["Eakin Lake", 53.810107, -125.913779],
-  ["NA", 53.9938, -125.981445],
+  ["A lake with no name", 53.9938, -125.981445],
   ["Totem Pole Lake", 53.966067, -125.944652],
   ["Tatalaska Lake", 53.938458, -125.907128],
   ["Mollice Lake", 53.957671, -125.714231],
-  ["NA", 53.875399, -124.755299],
+  ["A lake with no name", 53.875399, -124.755299],
   ["Anderson Lake", 50.643861, -122.401882],
   ["Gun Lake", 50.872838, -122.879031]
 ];
@@ -173,12 +178,12 @@ var map = L.map('map',{
 });
 
 mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
-	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	subdomains: 'abcd',
-	minZoom: 1,
-	maxZoom: 16,
-	ext: 'jpg'
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
+    subdomains: 'abcd',
+    minZoom: 1,
+    maxZoom: 10,
+    ext: 'jpg'
 }).addTo(map);
 
 for (var i = 0; i < locations.length; i++) {
@@ -191,8 +196,12 @@ for (var i = 0; i < locations.length; i++) {
   </div>
 </div>
 
+<div>
+<p><br></p>
+</div>
+
 <footer class="container-fluid">
-  <p>Website by Rebecca Garner. Last updated 2021-11-01.</p>
+  <p>Website by Rebecca Garner. Last updated 2022-02-07.</p>
 </footer>
 
 </body>
